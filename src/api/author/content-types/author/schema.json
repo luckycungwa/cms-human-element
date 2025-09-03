@@ -11,38 +11,29 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "slug": {
-      "type": "string",
-      "unique": true
-    },
     "title": {
-      "type": "string"
-    },
-    "date": {
-      "type": "string"
-    },
-    "category": {
       "type": "string"
     },
     "excerpt": {
       "type": "text"
     },
-    "author": {
-      "type": "string"
-    },
-    "content": {
-      "type": "richtext"
-    },
-    "tag": {
-      "type": "json"
-    },
     "image": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files"
       ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }
